@@ -21,8 +21,8 @@ function Home({ addToCart }: HomeProps) {
       .then((data) => {
         setProducts(data);
         console.log('Received data:', data);
-        const uniqueCategories = [...new Set(data.map((product: Product) => product.category))];
-        setCategories(uniqueCategories);
+        const uniqueCategories = Array.from(new Set(data.map((product: Product) => product.category)));
+      setCategories(uniqueCategories as string[]);
       })
   }, []);
 

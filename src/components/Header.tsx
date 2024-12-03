@@ -7,7 +7,7 @@ function Header() {
         <div className="navigation">
           <div className='logo'>
             <a href="/">
-              <img className='logo__img' src="../src/images/logo.svg" alt="logo" />
+              <img className='logo__img' src="logo.svg" alt="logo" />
             </a>
           </div>
           <nav className='navigation_items'>
